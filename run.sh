@@ -1,3 +1,3 @@
 #bin/bash
 
-streamlit run main.py
+python3 -r streamlit run main.py
