@@ -1,11 +1,12 @@
 # Projet Streamlit
-**Auteurs:**
+**Auteur:**
 
-*Marouan K. : marouan@datarockstars.ai*
+*Jose Ricardo Silva Leite * ergopt3@gmail.com
 
-*Matis C. : matis@datarockstars.ai*
+## First Step
 
-*Bilel O. : bilel@datarockstars.ai*
+- Il faut telecharge le dataset sur le doussier data.
+- Vois ici le lien: https://drive.google.com/file/d/1sVGKfibWlYU6yDjSYYP4XLfNIB0lBJW2/view
 
 ## Démarrage
 
