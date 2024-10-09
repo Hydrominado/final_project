@@ -1,7 +1,7 @@
 import streamlit as st
 import utils as utl
 
-from src.views import home, map, analysis, options, login, logout
+from src.views import home, map, analysis, login, logout
 from src.router import get_route, redirect
 
 
@@ -32,10 +32,6 @@ def navigation():
         analysis.load_view()
     elif route == "/map":
         map.load_view()
-
-    elif route == "/options":
-        options.load_view() 
-
     elif route == "/logout":
         logout.load_view()
     elif route == "/login":
