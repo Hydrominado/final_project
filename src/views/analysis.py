@@ -1,59 +1,26 @@
 import streamlit as st
 
-import pandas as pd
-import numpy as np
-import random as rnd
-
-# visualization
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-# machine learning
-from sklearn.linear_model import LogisticRegression
-from sklearn.svm import SVC, LinearSVC
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.naive_bayes import GaussianNB
-from sklearn.linear_model import Perceptron
-from sklearn.linear_model import SGDClassifier
-from sklearn.tree import DecisionTreeClassifier
 
 def load_view():
-    st.title('Analysis Page')
-    st.code("""
-    # data analysis and wrangling
-    import pandas as pd
-    import numpy as np
-    import random as rnd
-    
-    # visualization
-    import seaborn as sns
-    import matplotlib.pyplot as plt
-    
-    # machine learning
-    from sklearn.linear_model import LogisticRegression
-    from sklearn.svm import SVC, LinearSVC
-    from sklearn.ensemble import RandomForestClassifier
-    from sklearn.neighbors import KNeighborsClassifier
-    from sklearn.naive_bayes import GaussianNB
-    from sklearn.linear_model import Perceptron
-    from sklearn.linear_model import SGDClassifier
-    from sklearn.tree import DecisionTreeClassifier
+    st.title('Analysis de données')
 
 
-    train_df = pd.read_csv('titanic/train.csv')
-    test_df = pd.read_csv('titanic/test.csv')
-    combine = [train_df, test_df]
-    """)
-    
-    st.markdown("""
-    **Which features are categorical?**
-    These values classify the samples into sets of similar samples. Within categorical features are the values nominal, ordinal, ratio, or interval based? Among other things this helps us select the appropriate plots for visualization.
-    - Categorical: Survived, Sex, and Embarked. Ordinal: Pclass.
+# Analyse de la popularité des cuisines
+    st.markdown('''
+### Analyse de la Popularité des Cuisines:
+L'analyse des scores montre que la **cuisine italienne** est largement appréciée à travers l'Europe, en particulier en Europe occidentale. La simplicité et la saveur des plats comme les pâtes et les pizzas contribuent à cette popularité. De même, la **cuisine française**, réputée pour ses pâtisseries et ses plats gastronomiques, obtient des scores élevés, notamment dans les régions proches de la France.
 
-    **Which features are numerical?**
+**Autres résultats possibles** :
+- Les **tapas espagnols** obtiennent de bons scores dans le sud de l'Europe.
+- Des notes plus faibles pour les cuisines rapides ou moins traditionnelles dans certaines zones.
+''')
 
-    Which features are numerical? These values change from sample to sample. Within numerical features are the values discrete, continuous, or timeseries based? Among other things this helps us select the appropriate plots for visualization.
-    - Continous: Age, Fare. Discrete: SibSp, Parch.
-    """)
+# Analyse de l'influence culturelle
+    st.markdown('''
+### Analyse de l'Influence Culturelle:
+Les **cuisines méditerranéennes** (comme grecque ou italienne) obtiennent des scores élevés dans les pays du sud de l'Europe tels que l'Espagne, l'Italie et la Grèce, reflétant des préférences locales fortes. En revanche, la **cuisine nordique** pourrait être plus populaire en Europe du Nord (Scandinavie), avec des plats comme le poisson fumé et les légumes marinés, alignés avec les traditions locales.
+
+Les **cuisines internationales** comme la **cuisine japonaise** ou **indienne** pourraient obtenir de meilleurs scores dans des villes cosmopolites comme Londres ou Berlin, où les convives sont plus ouverts à des expériences culinaires diversifiées et globales.
+''')
+
 

@@ -1,9 +1,8 @@
 NAVBAR_PATHS = {
     'ACCUEIL':'home',
-    'OBJECTIF DU PROJET': 'goal',
-    'JEU DE DONNEES': 'dataset',
+    'CARTES' : 'map',
     'ANALYSE': 'analysis',
-    'CONCLUSION': 'conclusion',
+
 }
 
 SETTINGS = {
